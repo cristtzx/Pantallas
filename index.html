@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SICE - Login | Universidad Politécnica del Centro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="img/logo-upc.png" alt="Logo UPC">
+            <h1>SICE - UPC</h1>
+        </div>
+        <div class="card">
+            <h2>Iniciar sesión</h2>
+            <form action="alumno/dashboard.html" method="get">
+                <div class="form-group">
+                    <label for="username">Nombre de usuario</label>
+                    <input type="text" id="username" name="username" placeholder="Ingresa tu matrícula o usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button type="submit" class="btn">Iniciar sesión</button>
+                <a href="recuperar.html" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                
+                <div class="form-group dev-options">
+                    <label for="user-type">(Opciones de desarrollo)</label>
+                    <select id="user-type" name="user-type">
+                        <option value="alumno">Alumno</option>
+                        <option value="docente">Docente</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const userType = document.getElementById('user-type').value;
+            
+            if(userType === 'docente') {
+                this.action = 'docente/dashboard.html';
+            } else if(userType === 'admin') {
+                this.action = 'admin/dashboard.html';
+            }
+        });
+    </script>
+</body>
+</html>

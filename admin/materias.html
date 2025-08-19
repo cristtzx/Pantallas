@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Materias | SICE - UPC</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../img/logo-upc.png" alt="Logo UPC">
+            <h1>SICE - UPC</h1>
+        </div>
+        <div class="user-info">
+            <img src="../../img/user-avatar.png" alt="Foto de perfil">
+            <span>Administrador</span>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Inicio</a></li>
+            <li><a href="estudiantes.html">Estudiantes</a></li>
+            <li><a href="docentes.html">Docentes</a></li>
+            <li><a href="materias.html" class="active">Materias</a></li>
+            <li><a href="planes.html">Planes de Estudio</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="../../index.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Gestión de Materias</h2>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar materia...">
+                <button class="btn">Buscar</button>
+                <a href="#" class="btn">Agregar nueva</a>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Clave</th>
+                        <th>Nombre</th>
+                        <th>Carrera</th>
+                        <th>Semestre</th>
+                        <th>Créditos</th>
+                        <th>Grupos</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ISC-501</td>
+                        <td>Programación Avanzada</td>
+                        <td>Ing. Sistemas</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>3</td>
+                        <td>
+                            <a href="#" class="btn btn-sm">Editar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ISC-502</td>
+                        <td>Bases de Datos</td>
+                        <td>Ing. Sistemas</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>2</td>
+                        <td>
+                            <a href="#" class="btn btn-sm">Editar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ISC-503</td>
+                        <td>Redes de Computadoras</td>
+                        <td>Ing. Sistemas</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>
+                            <a href="#" class="btn btn-sm">Editar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IIN-301</td>
+                        <td>Investigación de Operaciones</td>
+                        <td>Ing. Industrial</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>
+                            <a href="#" class="btn btn-sm">Editar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="form-actions">
+                <button class="btn btn-secondary">Exportar a Excel</button>
+                <button class="btn">Imprimir listado</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

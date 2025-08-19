@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes | SICE - UPC</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../img/logo-upc.png" alt="Logo UPC">
+            <h1>SICE - UPC</h1>
+        </div>
+        <div class="user-info">
+            <img src="../../img/user-avatar.png" alt="Foto de perfil">
+            <span>Administrador</span>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Inicio</a></li>
+            <li><a href="estudiantes.html" class="active">Estudiantes</a></li>
+            <li><a href="docentes.html">Docentes</a></li>
+            <li><a href="materias.html">Materias</a></li>
+            <li><a href="planes.html">Planes de Estudio</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="../../index.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Gestión de Estudiantes</h2>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar estudiante...">
+                <button class="btn">Buscar</button>
+                <a href="#" class="btn">Agregar nuevo</a>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Matrícula</th>
+                        <th>Nombre</th>
+                        <th>Carrera</th>
+                        <th>Semestre</th>
+                        <th>Estatus</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023001</td>
+                        <td>Juan Pérez López</td>
+                        <td>Ing. Sistemas</td>
+                        <td>5</td>
+                        <td><span class="status-badge aprobado">Activo</span></td>
+                        <td>
+                            <a href="#" class="btn btn-sm">Editar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023002</td>
+                        <td>María García Sánchez</td>
+                        <td>Ing. Industrial</td>
+                        <td>3</td>
+                        <td><span class="status-badge aprobado">Activo</span></td>
+                        <td>
+                            <a href="#" class="btn btn-sm">Editar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2022005</td>
+                        <td>Carlos Rodríguez Martínez</td>
+                        <td>Ing. Mecánica</td>
+                        <td>7</td>
+                        <td><span class="status-badge cursando">Baja temporal</span></td>
+                        <td>
+                            <a href="#" class="btn btn-sm">Editar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021003</td>
+                        <td>Ana López González</td>
+                        <td>Lic. Administración</td>
+                        <td>9</td>
+                        <td><span class="status-badge aprobado">Egresado</span></td>
+                        <td>
+                            <a href="#" class="btn btn-sm">Editar</a>
+                            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="form-actions">
+                <button class="btn btn-secondary">Exportar a Excel</button>
+                <button class="btn">Imprimir listado</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

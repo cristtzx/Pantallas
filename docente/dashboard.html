@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Docente | SICE - UPC</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../img/logo-upc.png" alt="Logo UPC">
+            <h1>SICE - UPC</h1>
+        </div>
+        <div class="user-info">
+            <img src="../../img/user-avatar.png" alt="Foto de perfil">
+            <span>Dr. Juan Martínez</span>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="dashboard.html" class="active">Inicio</a></li>
+            <li><a href="calificaciones.html">Calificaciones</a></li>
+            <li><a href="asistencia.html">Asistencia</a></li>
+            <li><a href="notificaciones.html">Notificaciones</a></li>
+            <li><a href="../../index.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h1>Bienvenido, Dr. Juan Martínez</h1>
+        
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <h3>Grupos asignados</h3>
+                <ul class="group-list">
+                    <li>
+                        <strong>Programación Avanzada - Grupo A</strong><br>
+                        Lunes y Miércoles 11:00-13:00<br>
+                        Aula 105
+                    </li>
+                    <li>
+                        <strong>Bases de Datos - Grupo B</strong><br>
+                        Martes y Jueves 14:00-16:00<br>
+                        Aula 201
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-sm">Ver todos</a>
+            </div>
+            
+            <div class="dashboard-card">
+                <h3>Acciones rápidas</h3>
+                <a href="calificaciones.html" class="btn btn-sm" style="margin-bottom: 10px; display: block;">Capturar calificaciones</a>
+                <a href="asistencia.html" class="btn btn-sm" style="margin-bottom: 10px; display: block;">Registrar asistencia</a>
+                <a href="#" class="btn btn-sm" style="margin-bottom: 10px; display: block;">Enviar mensaje</a>
+            </div>
+            
+            <div class="dashboard-card">
+                <h3>Calificaciones pendientes</h3>
+                <div class="pending-task">
+                    <strong>Programación Avanzada:</strong> 1er parcial<br>
+                    <span class="date">Fecha límite: 15/12/2022</span>
+                </div>
+                <div class="pending-task">
+                    <strong>Bases de Datos:</strong> Proyecto final<br>
+                    <span class="date">Fecha límite: 20/12/2022</span>
+                </div>
+                <a href="calificaciones.html" class="btn btn-sm">Completar</a>
+            </div>
+            
+            <div class="dashboard-card">
+                <h3>Notificaciones recientes</h3>
+                <div class="notification unread">
+                    <h3>Recordatorio: Entrega de calificaciones</h3>
+                    <p>El periodo para capturar calificaciones del 1er parcial está abierto hasta el 15 de diciembre.</p>
+                    <p class="date">10/12/2022</p>
+                </div>
+                <div class="notification">
+                    <h3>Reunión académica</h3>
+                    <p>Se ha programado una reunión académica el próximo miércoles a las 10:00 AM en la sala de profesores.</p>
+                    <p class="date">05/12/2022</p>
+                </div>
+                <a href="notificaciones.html" class="btn btn-sm">Ver todas</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
